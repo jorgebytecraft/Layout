@@ -1,0 +1,207 @@
+/* Layout da HomePage*/
+/* Grid Area */
+.area-homepage{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav nav nav'
+    'aside main article'
+    'footer footer footer';
+    grid-template-columns: repeat(3,1fr); /* 3 colunas de tamanho igual*/
+    grid-template-rows: 0.5fr 0.5fr 2.5fr 1fr; /* 4 linhas de tamanhos diferentes*/
+    gap: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+}
+header{
+    grid-area: header;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+nav{
+    grid-area: nav;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+aside{
+    grid-area: aside;
+    border: 1px solid blue;
+    background-color: lightgray;
+}
+article{
+    grid-area: article;
+    border: 1px solid blue;
+    background-color: lightgray;
+}
+main{
+    grid-area: main;
+    border: 1px solid blue;
+    background-color: lightgray;
+}
+footer{
+    grid-area: footer;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+/* Layout da Sobre */
+/* Grid Area */
+.area-sobre{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav nav nav'
+    'aside main article'
+    'section section section'
+    'footer footer footer';
+    grid-template-columns: 0.5fr 2fr 0.5fr; /* 3 colunas de tamanho igual*/
+    grid-template-rows: 0.5fr 0.5fr 2.5fr 1fr 1fr; /* 5 linhas de tamanhos diferentes*/
+    gap: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+header{
+    grid-area: header;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+nav{
+    grid-area: nav;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+aside{
+    grid-area: aside;
+    border: 1px solid blue;
+    background-color: lightgray;
+}
+article{
+    grid-area: article;
+    border: 1px solid blue;
+    background-color: lightgray;
+}
+main{
+    grid-area: main;
+    border: 1px solid blue;
+    background-color: lightgray;
+}
+
+section{
+    grid-area: section;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+
+footer{
+    grid-area: footer;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+/* Layout da Contato */
+/* Grid Area */
+.area-contato{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav nav nav'
+    'section section section'
+    'aside main article'
+    'footer footer footer';
+    grid-template-columns: 2fr 0.5fr 0.5fr; /* 3 colunas de tamanho igual*/
+    grid-template-rows: 0.5fr 0.5fr 1fr 2.5fr 1fr; /* 5 linhas de tamanhos diferentes*/
+    gap: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    grid-area: header;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+nav{
+    grid-area: nav;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+section{
+    grid-area: section;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+aside{
+    grid-area: aside;
+    border: 1px solid blue;
+    background-color: lightgray;
+}
+article{
+    grid-area: article;
+    border: 1px solid blue;
+    background-color: lightgray;
+}
+main{
+    grid-area: main;
+    border: 1px solid blue;
+    background-color: lightgray;
+}
+footer{
+    grid-area: footer;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+
+/*Grid Mobile HomePage*/
+@media (max-width: 768px) {
+    .area-homepage{
+        grid-template-areas: 
+        'header header'
+        'nav nav'
+        'main main'
+        'article aside'
+        'footer footer';
+        grid-template-columns: 2fr; /* 2 coluna de tamanho igual*/
+        grid-template-rows: 0.5fr 0.5fr 2fr 1fr 1fr; /* 5 linhas de tamanhos diferentes*/
+    }
+
+/*Grid Mobile Sobre*/
+    .area-sobre{
+        grid-template-areas: 
+        'header header'
+        'nav nav'
+        'main main'
+        'article aside'
+        'section section'
+        'footer footer';
+        grid-template-columns: 2fr; /* 2 coluna de tamanho igual*/
+        grid-template-rows: 0.5fr 0.5fr 2fr 1fr 1fr 1fr; /* 6 linhas de tamanhos diferentes*/
+    }
+/* Grid Mobile Contato */
+    .area-contato{
+        grid-template-areas: 
+        'header header'
+        'nav nav'
+        'section section'
+        'main main'
+        'article aside'
+        'footer footer';
+        grid-template-columns: 2fr; /* 2 coluna de tamanho igual*/
+        grid-template-rows: 0.5fr 0.5fr 1fr 1fr 2fr 1fr; /* 6 linhas de tamanhos diferentes*/
+    }
+}   
