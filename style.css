@@ -155,6 +155,7 @@ article{
     grid-area: article;
     border: 1px solid blue;
     background-color: white;
+    
 }
 main{
     grid-area: main;
@@ -169,7 +170,7 @@ footer{
 
 /*Flexbox HomePage*/
 
-/* Header */
+/* Header container */
 .header-container-homepage{
     display: flex;
     flex-direction: row;
@@ -178,19 +179,8 @@ footer{
     gap: 10px;
     border: 3px solid red;
 }
-.logo-homepage{
-    width: 50px;
-    height: 50px;
-    border: 5px solid green;
-}
-.titulo-homepage{
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-start;
-    border: 5px solid green;  
-}
 
-/* Nav */
+/* Nav container */
 .nav-container-homepage{
     border: 3px solid red;
     display: flex;
@@ -198,50 +188,117 @@ footer{
     align-items: center;
     justify-content: space-evenly;
 }
-.menu-homepage{
-    border: 5px solid green;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    justify-content: center;
-    flex-grow: 0.3;
-}
 
-/* Aside */
-
-table, th, td {
-  border: 1px solid black;
-}
+/* Aside container */
 .aside-container-homepage{
     border: 3px solid red;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 30px;
+    flex-wrap: nowrap;
 }
-.tabela-homepage{
-    border: 5px solid green;
-}
-.listas-homepage{
-    border: 5px solid green;
-    display: flex;
-    flex-direction: row;
-    gap: 20px; 
-}
-/* Main */
+/* Main container */
 .main-container-homepage{
     border: 3px solid red;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 30px;
 }
-.video-main-homepage{
+/* Article container */
+.article-container-homepage{
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* Footer container */
+.footer-container-homepage{
+    border: 3px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+/*Itens do container*/
+
+/** Itens do Header */
+.logo-homepage{
+    width: 50px;
+    height: 50px;
     border: 5px solid green;
-    width: 80%;
-    height: auto;
+    display: flex;
+    flex-basis: auto;    
+;}
+.titulo-homepage{
+    display: flex;
+    flex-grow: 1;
+    border: 5px solid green;  
+}
+
+/* Itens do Nav */
+.menu-homepage{
+    border: 5px solid green;
+    display: flex;
+    flex-grow: 0.3;
+    align-self: stretch;
+  
+    align-items: center;
+    Justify-content: space-evenly;
+}
+/* Itens do Aside */
+table, th, td {
+  border: 1px solid black;
+}
+
+.tabela-homepage{
+    border: 5px solid green;
+    display: flex;
+    align-self: stretch;
+
+    align-items: center;
+    Justify-content: space-evenly;
+}
+.listas-homepage{
+    border: 5px solid green;
+    display: flex;
+    align-self: stretch;
+
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center; 
+
+}
+/* Itens do Main */
+.video-main-homepage{
+    display: flex;
+    align-self: stretch;
+    border: 5px solid green;
+}
+/* Itens do Article */
+.form-article-homepage{
+    display: flex;
+    align-self: stretch;
+    border: 5px solid green;
+}
+.imagem-article-homepage{
+    display: flex;
+    align-self: auto;
+    flex-basis: auto;
+    border: 5px solid green;
+}
+.contato-footer-homepage{
+    display: flex;
+    align-self: stretch;
+    flex-grow: 1;
+    border: 5px solid green;
 }
 
 /*Grid Mobile HomePage*/
