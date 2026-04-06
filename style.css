@@ -1,5 +1,10 @@
 /* Layout da HomePage*/
 /* Grid Area */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
+}
 .area-homepage{
     display: grid;
     grid-template-areas: 
@@ -170,7 +175,7 @@ footer{
 
 /*Flexbox HomePage*/
 
-/* Header container */
+/* Header container homepage*/
 .header-container-homepage{
     display: flex;
     flex-direction: row;
@@ -180,46 +185,112 @@ footer{
     border: 3px solid red;
 }
 
-/* Nav container */
+/* Nav container homepage*/
 .nav-container-homepage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 3px solid red;
+}
+
+/* Aside container homepage*/
+.aside-container-homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 3px solid red;
+}
+/* Main container homepage*/
+.main-container-homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    border: 3px solid red;
+
+}
+/* Article container homepage*/
+.article-container-homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    border: 3px solid red;
+}
+/* Footer container homepage*/
+.footer-container-homepage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 3px solid red;    
+}
+
+/* Flexbox Sobre */
+
+/* Header container sobre*/
+.header-container-sobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 3px solid red;
+}
+/* Nav container sobre*/
+.nav-container-sobre{
     border: 3px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
-
-/* Aside container */
-.aside-container-homepage{
+/*Aside container sobre*/
+.aside-container-sobre{
     border: 3px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
-/* Main container */
-.main-container-homepage{
+/* Main container sobre */
+.main-container-sobre{
+    border: 3px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+/* Article container sobre */
+.article-container-sobre{
     border: 3px solid red;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
-/* Article container */
-.article-container-homepage{
+/*Section container sobre*/
+.section-container-sobre{
     border: 3px solid red;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     gap: 30px;
 }
 
-
-/* Footer container */
-.footer-container-homepage{
+/* Footer container sobre*/
+.footer-container-sobre{
     border: 3px solid red;
     display: flex;
     flex-direction: row;
@@ -227,9 +298,80 @@ footer{
     align-items: center;
     gap: 30px;
 }
+
+/*Flexbox Contato*/
+
+/* Header container contato*/
+.header-container-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 3px solid red;
+}
+
+/* Nav container contato*/
+.nav-container-contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 3px solid red;
+}
+/*Section container contato*/
+.section-container-contato{
+    border: 3px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Aside container contato*/
+.aside-container-contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 3px solid red;
+}
+/* Main container contato*/
+.main-container-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    border: 3px solid red;
+
+}
+/* Article container contato*/
+.article-container-contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    border: 3px solid red;
+}
+/* Footer container contato*/
+.footer-container-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 3px solid red;    
+}
+
+
 /*Itens do container*/
 
-/** Itens do Header */
+/*Item do HomePage */
+/* Itens do Header homepage*/
 .logo-homepage{
     width: 50px;
     height: 50px;
@@ -243,7 +385,7 @@ footer{
     border: 5px solid green;  
 }
 
-/* Itens do Nav */
+/* Itens do Nav homepage*/
 .menu-homepage{
     border: 5px solid green;
     display: flex;
@@ -253,7 +395,7 @@ footer{
     align-items: center;
     Justify-content: space-evenly;
 }
-/* Itens do Aside */
+/* Itens do Aside homepage*/
 table, th, td {
   border: 1px solid black;
 }
@@ -276,13 +418,13 @@ table, th, td {
     align-items: center; 
 
 }
-/* Itens do Main */
+/* Itens do Main homepage*/
 .video-main-homepage{
     display: flex;
     align-self: stretch;
     border: 5px solid green;
 }
-/* Itens do Article */
+/* Itens do Article homepage*/
 .form-article-homepage{
     display: flex;
     align-self: stretch;
@@ -294,7 +436,152 @@ table, th, td {
     flex-basis: auto;
     border: 5px solid green;
 }
+
+/*Itens do Footer homepage*/
 .contato-footer-homepage{
+    display: flex;
+    align-self: stretch;
+    flex-grow: 1;
+    border: 5px solid green;
+}
+
+/*Item do Sobre*/
+
+/* Itens do Header sobre*/
+.logo-sobre{
+    width: 50px;
+    height: 50px;
+    border: 5px solid green;
+    display: flex;
+    flex-basis: auto;
+}
+.titulo-sobre{
+    display: flex;
+    flex-grow: 1;
+    border: 5px solid green;  
+}
+
+/* Itens do Nav sobre */
+.menu-sobre{
+    border: 5px solid green;
+    display: flex;
+    flex-grow: 0.3;
+    align-self: stretch;
+  
+    align-items: center;
+    Justify-content: space-evenly;
+}
+
+/* Itens do Aside sobre*/
+.paragrafo-sobre{
+    border: 5px solid green;
+    display: flex;
+    align-self: stretch;
+}
+
+/* Itens do Main sobre*/
+.tabela-sobre{
+    border: 5px solid green;
+}
+.video-main-sobre{
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid green;
+}
+
+/*Itens do Article sobre */
+.article-item-sobre{
+    border: 5px solid green;
+    display: flex;
+    align-self: stretch;
+}
+
+/*Itens do Section sobre*/
+.section-sobre{
+    border: 5px solid green;
+    display: flex;
+    align-self: stretch;
+}
+
+/*Itens do Footer sobre*/
+.contato-footer-sobre{
+    display: flex;
+    align-self: stretch;
+    flex-grow: 1;
+    border: 5px solid green;
+}
+
+/*Item do Contato*/
+
+/* Itens do Header contato*/
+.logo-contato{
+    width: 50px;
+    height: 50px;
+    border: 5px solid green;
+    display: flex;
+    flex-basis: auto;
+}
+.titulo-contato{
+    display: flex;
+    flex-grow: 1;
+    border: 5px solid green;  
+}
+
+/* Itens do Nav contato */
+.menu-contato{
+    border: 5px solid green;
+    display: flex;
+    flex-grow: 0.3;
+    align-self: stretch;
+  
+    align-items: center;
+    Justify-content: space-evenly;
+}
+/*Itens da Section contato*/
+.section-contato{
+    border: 5px solid green;
+    display: flex;
+    align-self: stretch;
+}
+
+/*Itens do Aside*/
+.form-contato{
+    border: 5px solid green;
+}
+.paragrafo-contato{
+    border: 5px solid green;
+}
+.figure-contato{
+    border: 5px solid green;
+}
+
+/*Itens do Main contato*/
+.listas-contato{
+    border: 5px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+.video-main-contato{
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid green;
+}
+/*Itens do Articles contato*/
+.imagens-articles-contato{
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid green;
+}
+.paragrafo-articles-contato{
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid green;
+}
+/*Itens do Footer contato*/
+.contato-footer-contato{
     display: flex;
     align-self: stretch;
     flex-grow: 1;
@@ -328,6 +615,8 @@ table, th, td {
         grid-template-rows: 0.5fr 0.5fr 2fr 1fr 1fr 1fr; /* 6 linhas de tamanhos diferentes*/
         background-color: white;
     }
+
+
 /* Grid Mobile Contato */
     .area-contato{
         grid-template-areas: 
