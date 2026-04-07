@@ -1,0 +1,15 @@
+/*Box Model da homepage*/
+/* Box da header */
+
+.titulo-box{
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 255, 0.3);
+    color: white;
+}
+.menu-box{
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+}

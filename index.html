@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
     <!-- Estrutura de Layout -->
 <body class="area-homepage">
@@ -12,8 +13,8 @@
     <!-- Header -->
     <header>
         <div class="header-container-homepage">
-            <img src="logo.png" alt="Logo" class="logo-homepage">
-            <h1 class="titulo-homepage">Header</h1>
+            <img src="css/img/logo.jpg" alt="Logo" class="logo-homepage">
+            <h1 class="titulo-homepage titulo-box">DOAJ Directory Open Acess Journals</h1>
         </div>
     </header>
 
@@ -21,7 +22,7 @@
     <nav>
         <div class="nav-container-homepage">
             <p>Menu de Navegação</p>
-            <div class="menu-homepage">
+            <div class="menu-homepage menu-box">
                 <span>
                     <a href="#">Home</a>
                     <a href="sobre.html">Sobre</a>
@@ -33,9 +34,9 @@
 
     <!-- Conteúdo Principal -->
         <aside>
+            <div class="aside-container-homepage">
                 <p>Conteúdo do aside</p>
-                <div class="aside-container-homepage">
-                    <img src="aside-image.jpg" alt="Imagem do Aside" class="aside-image-homepage">
+                <img src="aside-image.jpg" alt="Imagem do Aside" class="aside-image-homepage">
                  <table class="tabela-homepage">
                     <tr>
                         <th>Firstname</th>
@@ -53,8 +54,7 @@
                         <td>94</td>
                     </tr>
                     </table>
-                 </div>
-                 <div class="aside-container-homepage">
+
                     <ul class="listas-homepage">
                         <li>Item 1</li>
                         <li>Item 2</li>
@@ -69,19 +69,17 @@
         </aside>
    
         <main>
-                <p>Conteúdo do main</p>
                 <div class="main-container-homepage">
+                    <p>Conteúdo do main</p>
                     <h2>Subtítulo do Main</h2>
                     <p>Este é um parágrafo adicional dentro do main para demonstrar a estrutura de layout.</p>
-                </div>
-                <div class="main-container-homepage">
                     <video src="main-video.mp4" controls class="video-main-homepage"></video>
                 </div>
         </main>
        
         <article>
-        <p>Conteúdo do article</p>
             <div class="article-container-homepage">
+                <p>Conteúdo do article</p>
                 <fieldset class="form-article-homepage">
                     <form>
                         <label for="name">Nome:</label>
@@ -93,18 +91,17 @@
                         <input type="submit" value="Enviar">
                     </form>
                 </fieldset>
-            </div>
-            <div class="article-container-homepage">
                 <figure>
                         <img src="article-image.jpg" alt="Imagem do Article" class="imagem-article-homepage">
                         <figcaption>Legenda da Imagem do Article</figcaption>
-                </figure>                
+                </figure> 
+             </div>                  
         </article>
         
     <!-- Rodapé -->
     <footer>
-        <p>&copy; 2024 Minha HomePage. Todos os direitos reservados.</p>
         <div class="footer-container-homepage">
+            <p>&copy; 2024 Minha HomePage. Todos os direitos reservados.</p>  
             <fieldset class="contato-footer-homepage">
                 <p>Informações de Contato:</p>
                 <p>Email :exemplo@exemplo.com</p>

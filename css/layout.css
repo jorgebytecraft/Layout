@@ -183,6 +183,9 @@ footer{
     align-items: center;
     gap: 10px;
     border: 3px solid red;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 
 /* Nav container homepage*/
@@ -192,6 +195,9 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     border: 3px solid red;
+    width: 100%;
+    height: 100%;
+    
 }
 
 /* Aside container homepage*/
@@ -202,6 +208,9 @@ footer{
     align-items: center;
     flex-wrap: nowrap;
     border: 3px solid red;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /* Main container homepage*/
 .main-container-homepage{
@@ -211,7 +220,9 @@ footer{
     align-items: center;
     gap: 30px;
     border: 3px solid red;
-
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /* Article container homepage*/
 .article-container-homepage{
@@ -221,6 +232,10 @@ footer{
     align-items: center;
     gap: 30px;
     border: 3px solid red;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
+
 }
 /* Footer container homepage*/
 .footer-container-homepage{
@@ -229,7 +244,11 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    border: 3px solid red;    
+    border: 3px solid red;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
+    
 }
 
 /* Flexbox Sobre */
@@ -242,6 +261,10 @@ footer{
     align-items: center;
     gap: 10px;
     border: 3px solid red;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
+
 }
 /* Nav container sobre*/
 .nav-container-sobre{
@@ -250,6 +273,9 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /*Aside container sobre*/
 .aside-container-sobre{
@@ -259,6 +285,9 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /* Main container sobre */
 .main-container-sobre{
@@ -269,6 +298,9 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /* Article container sobre */
 .article-container-sobre{
@@ -278,6 +310,9 @@ footer{
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /*Section container sobre*/
 .section-container-sobre{
@@ -287,6 +322,9 @@ footer{
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 
 /* Footer container sobre*/
@@ -297,6 +335,9 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 
 /*Flexbox Contato*/
@@ -309,6 +350,10 @@ footer{
     align-items: center;
     gap: 10px;
     border: 3px solid red;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
+
 }
 
 /* Nav container contato*/
@@ -318,6 +363,10 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     border: 3px solid red;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
+
 }
 /*Section container contato*/
 .section-container-contato{
@@ -327,6 +376,10 @@ footer{
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
+
 }
 
 /* Aside container contato*/
@@ -337,6 +390,10 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     border: 3px solid red;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
+
 }
 /* Main container contato*/
 .main-container-contato{
@@ -344,9 +401,11 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     border: 3px solid red;
-
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /* Article container contato*/
 .article-container-contato{
@@ -354,8 +413,11 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     border: 3px solid red;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /* Footer container contato*/
 .footer-container-contato{
@@ -363,8 +425,11 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    border: 3px solid red;    
+    gap: 10px;
+    border: 3px solid red;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */        
 }
 
 
@@ -373,16 +438,18 @@ footer{
 /*Item do HomePage */
 /* Itens do Header homepage*/
 .logo-homepage{
-    width: 50px;
-    height: 50px;
     border: 5px solid green;
     display: flex;
-    flex-basis: auto;    
+    flex-basis: auto;
+    width: 80px;    
 ;}
 .titulo-homepage{
     display: flex;
-    flex-grow: 1;
-    border: 5px solid green;  
+    border: 5px solid green;
+    align-self: center;
+
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
 }
 
 /* Itens do Nav homepage*/
@@ -390,10 +457,9 @@ footer{
     border: 5px solid green;
     display: flex;
     flex-grow: 0.3;
-    align-self: stretch;
-  
-    align-items: center;
-    Justify-content: space-evenly;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+
 }
 /* Itens do Aside homepage*/
 table, th, td {
@@ -560,8 +626,8 @@ table, th, td {
     border: 5px solid green;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 10px;
     flex-wrap: wrap; 
 }
 .video-main-contato{
