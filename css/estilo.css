@@ -1,15 +1,32 @@
 /*Box Model da homepage*/
 /* Box da header */
+.logo-home-box{
+    width: 200px;
+}
 
 .titulo-box{
-    text-align: center;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 255, 0.3);
-    color: white;
+    text-align: center;    
 }
-.menu-box{
+.menu-box-homepage{
     border-radius: 10px;
-    width: 150px;
+    width: 250px;
+    height: 50px;
+}
+
+/*Box Model da sobre*/
+.menu-box-sobre{
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+}
+
+.tabela-box{
+    margin: 1px;
+}
+
+/*Box Model da contato*/
+.menu-box-contato{
+    border-radius: 10px;
+    width: 250px;
     height: 50px;
 }

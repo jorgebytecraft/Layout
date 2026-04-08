@@ -13,21 +13,22 @@
     <!-- Header -->
     <header>
         <div class="header-container-contato">
-            <img src="logo.png" alt="Logo" class="logo-contato">
-            <h1 class="titulo-contato">Header</h1>
+            <div class="logo-contato">
+               <img src="css/img/logo.jpg" alt="Logo">
+            </div>
+            <div class="titulo-contato">
+                <h1>DOAJ Directory Open Acess Journals</h1>
+            </div>
         </div>
     </header>
  
     <!-- Nav menu -->
     <nav>
         <div class="nav-container-contato">
-            <p>Menu de Navegação</p>
-            <div class="menu-contato">
-                <span>
-                    <a href="#">Home</a>
-                    <a href="sobre.html">Sobre</a>
-                    <a href="contato.html">Contato</a>
-                </span>
+            <div class="menu-contato menu-box-homepage">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="sobre.html">Sobre</a></span>
+                <span><a href="contato.html">Contato</a></span>
             </div>
         </div>
     </nav>
@@ -35,22 +36,7 @@
     <!-- Seções Adicionais -->
         <section>
                 <div class="section-container-contato">
-                    <p>Conteúdo da seção de contato.</p>
-                    <p>Conteudo Adicional</p>
                     <div class="section-contato">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Consequatur ex eligendi maiores numquam doloremqu 
-                            similique esse magni quod temporibus fuga id 
-                            debitis corporis quasi earum, pariatur tenetur 
-                            architecto, excepturi ipsam.
-                        </p>
-                        <hr>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Autem ut deleniti culpa nostrum repudiandae rem 
-                            tempora. Placeat iure deleniti similique, 
-                            recusandae, error corporis minus ad commodi 
-                            quibusdam reiciendis quis ipsum.
-                        </p>
                     </div>
                 </div>
         </section>
@@ -59,75 +45,42 @@
     <!-- Conteúdo Principal -->
         <aside>
                 <div class="aside-container-contato">
-                <p>Conteúdo do aside</p>
-                    <div>
-                        <form class="form-contato">
-                            <label for="name">Nome:</label>
-                            <input type="text" id="name" name="name"><br><br>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email"><br><br>
-                            <label for="age">Idade:</label>
-                            <input type="number" id="age" name="age"><br><br>
-                            <input type="date" name="date" id="date"><br><br>
-                            <input type="submit" value="Enviar">
-                        </form>
+                    <div class="form-contato">
                     </div>
                     <div class="paragrafo-contato">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Distinctio magni aliquam dignissimos nostrum vel aspernatur, 
-                            consequatur iste laudantium iure, recusandae et, dolore ea 
-                            dolorem praesentium. Beatae voluptate animi soluta eveniet.
-                        </p>
-                        <p>
-                        Odio rem magni a officiis? Nisi recusandae corporis, architecto 
-                        id officia quidem vel quibusdam nam nostrum eos voluptatibus? 
-                        Neque aperiam ratione voluptatibus odio minus 
-                        facilis perferendis veritatis molestiae impedit nemo
-                        </p>
                     </div>
                     <div class="figure-contato">
-                        <figure>
-                                <img src="imagens1.png" alt="Imagem da Aside">
-                        </figure>
                     </div>
                 </div>
-
         </aside>
     
         <main>
-                <div class="main-container-contato">
-                <p>Conteúdo do main</p>                    
+                <div class="main-container-contato">                 
                         <div class="listas-contato">
-                            <ul>
-                                <li>Item1</li>
-                                <li>Item2</li>
-                                <li>Item3</li>                        
-                            </ul>
-                            <ol>
-                                <li>Item1</li>
-                                <li>Item2</li>
-                                <li>Item3</li>                                                                        
-                            </ol>
-                        </div>
+                                <ul>
+                                    <li>Item1</li>
+                                    <li>Item2</li>
+                                    <li>Item3</li>                        
+                                </ul>
+                                <ol>
+                                    <li>Item1</li>
+                                    <li>Item2</li>
+                                    <li>Item3</li>                                                                        
+                                </ol>
+                            </div>
+                            <hr>
+                        <div class="video-main-contato">
+                            <fieldset>
+                                <video src="main-video.mp4" controls></video>
+                            </fieldset>   
+                        </div>     
                 </div>
-               <div class="main-container-contato">                         
-                    <div class="listas-contato">
-
-                    <div class="video-main-contato">
-                        <fieldset>
-                            <video src="main-video.mp4" controls></video>
-                        </fieldset>   
-                    </div>
-                    
-                    </div>
                 </div>
             </div> 
         </main>
        
         <article>
                     <div class="article-container-contato">
-                        <h1>Artigo</h1>
-                        <p>Imagem</p>
                         <div class="imagens-articles-contato">
                             <img src="imagem1.jpg" alt="Imagem do Artigo">
                         </div>
@@ -138,11 +91,6 @@
                                 quia necessitatibus sint reiciendis ipsum consequuntur 
                                 ratione.
                             </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Harum est optio ipsam sequi enim corrupti, nam asperiores fugit 
-                                quas unde repellendus dolore quae cum porro laudantium dolorum 
-                                numquam sunt voluptates!
-                            </p>
                         </div>
                     </div>
         </article>
@@ -151,12 +99,18 @@
     <!-- Rodapé -->
     <footer>
        <div class="footer-container-contato">
-        <p>&copy; 2024 Minha HomePage. Todos os direitos reservados.</p>        
-            <fieldset class="contato-footer-contato">
-                <p>Informações de Contato:</p>
-                <p>Email :exemplo@exemplo.com</p>
-            </fieldset>
-        </div>        
+            <div class="contato-footer-contato">
+                <fieldset>
+                    <p>&copy; 2024 Minha HomePage. Todos os direitos reservados.</p>
+                    <p>Informações de Contato:</p>
+                    <p>Email :exemplo@exemplo.com</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel blanditiis beatae optio explicabo necessitatibus, voluptatem fugit obcaecati quod soluta animi voluptatum, reiciendis dicta quam, assumenda recusandae totam officiis perferendis! Natus!</p>
+                </fieldset>
+            </div>
+            <div class="contato-footer-contato">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel blanditiis beatae optio explicabo necessitatibus, voluptatem fugit obcaecati quod soluta animi voluptatum, reiciendis dicta quam, assumenda recusandae totam officiis perferendis! Natus!</p>    
+            </div>    
+       </div>        
     </footer>
 
 </body>
