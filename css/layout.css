@@ -183,7 +183,6 @@ footer{
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 
     box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
@@ -468,28 +467,39 @@ footer{
 /* Itens do Header homepage*/
 .logo-homepage{
     border: 5px solid green;
-    width: 100px;
-    height: 100px;
     display: flex;
-;}
-.titulo-homepage{
-    border: 5px solid green;
-    display: flex;
-    align-self: stretch;
-    flex-grow: 1; 
-
+    /* flex: grow | shrink | basis */
+    flex: 0 0 100px;
+     
     justify-content: center; /* Centralizar horizontalmente */
     align-items: center; /* Centraliza verticalmente */
+}
+.logo-homepage img {
+    width: 100%;  
+    height: auto; 
+    display: block;
+}
+.titulo-homepage{
+
+    border: 5px solid green;
+    flex-grow: 1;    
+    flex-shrink: 0;
+    flex-basis: 0;
+    align-self: center;
+
+    text-align: center;
 }
 
 /* Itens do Nav homepage*/
 .menu-homepage{
     border: 5px solid green;
     display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
     align-self: center;
-
+    
     justify-content: space-around;
-    align-items: center;
 }
 /* Itens do Aside homepage*/
 table, th, td {
