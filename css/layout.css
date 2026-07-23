@@ -1,6 +1,10 @@
 /* Layout da HomePage*/
 /* Grid Area */
-* {
+
+*,
+*::before,
+*::after
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
@@ -16,11 +20,8 @@
     grid-template-rows: 0.5fr 0.5fr 2.5fr 1fr; /* 4 linhas de tamanhos diferentes*/
     gap: 10px;
     border: 1px solid black;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     background-color: lightgray;
 }
 header{
@@ -68,11 +69,8 @@ footer{
     grid-template-rows: 0.5fr 0.5fr 2.5fr 1fr 1fr; /* 5 linhas de tamanhos diferentes*/
     gap: 10px;
     border: 1px solid black;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     background-color: lightgray;
 }
 
@@ -128,11 +126,8 @@ footer{
     grid-template-rows: 0.5fr 0.5fr 1fr 2.5fr 1fr; /* 5 linhas de tamanhos diferentes*/
     gap: 10px;
     border: 1px solid black;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     background-color: lightgray;
 }
 header{
@@ -183,9 +178,7 @@ footer{
 
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 
 /* Nav container homepage*/
@@ -198,8 +191,6 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
    
 }
 
@@ -213,9 +204,7 @@ footer{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: nowrap;
 
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /* Main container homepage*/
 .main-container-homepage{
@@ -227,9 +216,7 @@ footer{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: nowrap;
 
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /* Article container homepage*/
 .article-container-homepage{
@@ -241,10 +228,7 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: nowrap;
     gap: 30px;
-
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 
 }
 /* Footer container homepage*/
@@ -257,8 +241,6 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
     
 }
 
@@ -274,8 +256,6 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /* Nav container sobre*/
 .nav-container-sobre{
@@ -288,7 +268,6 @@ footer{
     align-items: center;
     justify-content: space-evenly;
 
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /*Aside container sobre*/
 .aside-container-sobre{
@@ -302,7 +281,6 @@ footer{
     align-items: center;
     flex-wrap: wrap;
 
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /* Main container sobre */
 .main-container-sobre{
@@ -315,7 +293,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
+
 }
 /* Article container sobre */
 .article-container-sobre{
@@ -329,7 +307,6 @@ footer{
     align-items: center;
     gap: 30px;
 
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 /*Section container sobre*/
 .section-container-sobre{
@@ -343,7 +320,6 @@ footer{
     align-items: center;
     gap: 30px;
 
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 
 /* Footer container sobre*/
@@ -357,8 +333,6 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 30px;
-
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 
 /*Flexbox Contato*/
@@ -374,8 +348,6 @@ footer{
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
 
 /* Nav container contato*/
@@ -388,9 +360,8 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
+
 /*Section container contato*/
 .section-container-contato{
     border: 3px solid red;
@@ -402,8 +373,6 @@ footer{
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
-
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 
 }
 
@@ -418,9 +387,9 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 
 }
+
 /* Main container contato*/
 .main-container-contato{
     border: 3px solid red;
@@ -432,8 +401,8 @@ footer{
     justify-content: space-around;
     align-items: center;
 
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
+
 /* Article container contato*/
 .article-container-contato{
     border: 3px solid red;
@@ -445,8 +414,8 @@ footer{
     justify-content: space-evenly;
     align-items: center;
 
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */
 }
+
 /* Footer container contato*/
 .footer-container-contato{
     border: 3px solid red;
@@ -458,50 +427,39 @@ footer{
     justify-content: space-between;
     align-items: center;
 
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do elemento */        
 }
 
 /*Itens do container*/
 
 /*Item do HomePage */
 /* Itens do Header homepage*/
-.logo-homepage{
-    border: 5px solid green;
-    display: flex;
-    /* flex: grow | shrink | basis */
-    flex: 0 0 100px;
-     
-    justify-content: center; /* Centralizar horizontalmente */
-    align-self: center; /* Centraliza verticalmente */
-}
-.logo-homepage img {
-    width: 100%;  
-    height: auto; 
-    display: block;
-}
-.titulo-homepage{
-
-    border: 5px solid green;
-    /* flex: grow | shrink | basis */
-    flex: 1 0 0;
-     
-    align-self: center;
-
-    text-align: center;
-}
-
-/* Itens do Nav homepage*/
-.menu-homepage{
+.logo-card-homepage{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
     flex: 0 0 auto;
-
-    align-self: center;
-    
-    justify-content: space-around;
 }
-.menu-homepage a {
+.logo-card-homepage img {
+    height: 100px; 
+    display: block;
+}
+.titulo-card-homepage{
+    border: 5px solid green;
+    /* flex: grow | shrink | basis */
+    flex: 1 0 0;
+    align-self: center;
+    text-align: center;
+}
+
+/* Itens do Nav homepage*/
+.menu-card-homepage{
+    border: 5px solid green;
+    display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 auto;
+    align-self: center; 
+}
+.menu-card-homepage a {
     width: 100px;
     text-align: center;
     border: 1px solid black;
@@ -511,241 +469,276 @@ table, th, td {
   border: 1px solid black;
 }
 
-.tabela-homepage{
+.tabela-card-homepage{
     border: 5px solid green;
-    height: 50%;
-    width: 100%;
     display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 100px;
+    align-self: stretch;
 }
-.listas-homepage{
+.listas-card-homepage{
     border: 5px solid green;
-    height: 50%;
-    width: 100%;
     display: flex;
-
+    /* flex: grow | shrink | basis */
+    flex: 0 0 150px;
+    align-self: stretch;
 }
 /* Itens do Main homepage*/
-.video-main-homepage{
+.video-card-homepage{
     border: 5px solid green;
-    height: 50%;
-    width: 100%;
     display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 200px;
+    align-self: stretch;
 }
-.main-homepage-item{
+.main-card-homepage{
     border: 5px solid green;
-    height: 50%;
-    width: 100%;
-    display: flex;    
+    display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 100px;
+    align-self: stretch;  
 }
 /* Itens do Article homepage*/
-.form-article-homepage{
+.form-article-card-homepage{
     border: 5px solid green;
-    height: 50%;
-    width: 100%;
-    display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 150px;
+    align-self: stretch; 
 
 }
-.imagem-article-homepage{
+.imagem-article-card-homepage{
     border: 5px solid green;
-    height: 50%;
-    width: 100%;
-    display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 150px;
+    align-self: stretch; 
 }
 
 /*Itens do Footer homepage*/
-.contato-footer-homepage{
+.contato-footer-card-homepage{
     border: 5px solid green;
-    height: 100%;
-    width: 50%;
-    display: flex;    
+    display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 750px;
+    align-self: stretch; 
 }
-.item-footer-homepage{
+.footer-card-homepage{
     border: 5px solid green;
-    height: 100%;
-    width: 50%;
-    display: flex;   
+    /* flex: grow | shrink | basis */
+    flex: 0 0 600px;
+    align-self: stretch; 
 }
 
 /*Item do Sobre*/
 
 /* Itens do Header sobre*/
-.logo-sobre{
-    border: 5px solid green;
-    height: 100px;
-    
+.logo-card-sobre{
+    border: 5px solid green;    
     display: flex;
+        /* flex: grow | shrink | basis */
+    flex: 0 0 auto;
 }
-.titulo-sobre{
+.logo-card-sobre img {
+    height: 80px; 
+    display: block;
+}
+.titulo-card-sobre{
     border: 5px solid green;
-
     display: flex;
-    align-self: stretch;
-    flex-grow: 1;
-    
-    justify-content: space-around;
-    align-items: center;
-
+    /* flex: grow | shrink | basis */
+    flex: 1 0 auto;
+    align-self: center;    
+}
+.titulo-card-sobre h1{
+    width: 100%;
+    text-align: center;
 }
 
 /* Itens do Nav sobre */
-.menu-sobre{
+.menu-card-sobre{
     border: 5px solid green;
-    height: 100%;
-    width: 20%;
+    display: flex;
+      /* flex: grow | shrink | basis */
+    flex: 0 0 auto;
+    align-self: center;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
-.menu-item-sobre{
-    border: 5px solid green;
-    height: 100%;
-    width: 40%;
-    
-    display: flex;
+.menu-card-sobre a {
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
 }
 
 /* Itens do Aside sobre*/
-.paragrafo-sobre{
+.paragrafo-card-sobre{
     border: 5px solid green;
-    height: 100%;
-
     display: flex;
+      /* flex: grow | shrink | basis */
+    flex: 0 0 100px;
     align-self: stretch;    
+}
+.dialogo-card-sobre{
+    border: 5px solid green;
+    display: flex;
+        /* flex: grow | shrink | basis */
+    flex: 0 0 100px;
+    align-self: stretch;    
+
 }
 
 /* Itens do Main sobre*/
-.tabela-sobre{
+.tabela-card-sobre{
     border: 5px solid green;
-    height: 100%;
-    width: 100%;
-
     display: flex;
-    align-self: center;
-    
+    /* flex: grow | shrink | basis */
+    flex: 0 0 300px;
+    align-self: stretch;    
 }
-.video-main-sobre{
+.video-card-main-sobre{
     border: 5px solid green;
-    height: 100%;
-    width: 100%;
-
     display: flex;
-    align-self: center;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 300px;
+    align-self: stretch;
 
 }
 
 /*Itens do Article sobre */
-.article-item-sobre{
+.article-card-sobre{
     border: 5px solid green;
-    height: 100%;
-    width: 100%;
-
     display: flex;
+        /* flex: grow | shrink | basis */
+    flex: 0 0 100px;
     align-self: stretch;
 }
 
 /*Itens do Section sobre*/
-.section-sobre{
+.section-card-sobre{
     border: 5px solid green;
-    height: 100%;
-    width: 100%;    
-    
     display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 1 0 auto;
     align-self: stretch;
 }
 
 /*Itens do Footer sobre*/
-.contato-footer-sobre{
+.contato-footer-card-sobre{
     border: 5px solid green;
-
     display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 1 0 0;
     align-self: stretch;
-    flex-grow: 1;
 
 }
 
 /*Item do Contato*/
 
 /* Itens do Header contato*/
-.logo-contato{
+.logo-card-contato{
     border: 5px solid green;
-    width: 100px;
-    height: 100px;
     display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 auto;
+}
+.logo-card-contato img{
+    width: 90px;
+    display: block;
 }
 .titulo-contato{
     border: 5px solid green;
     display: flex;
-    align-self: stretch;
-  
+    /* flex: grow | shrink | basis */
+    flex: 1 0 auto;
+    align-self: stretch;  
 }
 
 /* Itens do Nav contato */
-.menu-contato{
+.menu-card-contato{
     border: 5px solid green;
     display: flex;
-    align-self: stretch;
-
-    justify-content: space-around;
-    align-items: center;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 auto;
+    align-self: center; 
+}
+.menu-card-contato a{
+    width: 60px;
+    border: 1px solid black;
+    text-align: center;
 }
 /*Itens da Section contato*/
-.section-contato{
+.section-card-contato{
     border: 5px solid green;
     display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 1 0 auto; 
     align-self: stretch;
 }
 
 /*Itens do Aside*/
-.form-contato{
-    border: 5px solid green;
-
-    display: flex;
-    align-self: stretch;
-}
-.paragrafo-contato{
+.form-card-contato{
     border: 5px solid green;
     display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 100px; 
     align-self: stretch;
 }
-.figure-contato{
+.paragrafo-card-contato{
     border: 5px solid green;
+    display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 50px; 
+    align-self: stretch;
+}
+.figure-card-contato{
+    border: 5px solid green;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 30px; 
+    align-self: stretch;
 }
 
 /*Itens do Main contato*/
-.listas-contato{
+.listas-card-contato{
     border: 5px solid green;
 
     display: flex;
-    justify-content: space-around;
-    align-self: stretch ;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 auto; 
+    align-self: stretch;
+
+    justify-content: space-around; /* Ajusta a divisão da lista*/
 }
-.video-main-contato{
+.video-main-card-contato{
     border: 5px solid green;
-    
     display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 auto; 
     align-self: stretch;
 }
 /*Itens do Articles contato*/
-.imagens-articles-contato{
+.imagens-articles-card-contato{
     border: 5px solid green;
 
     display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 30px; 
     align-self: stretch;
+
 }
-.paragrafo-articles-contato{
+.paragrafo-articles-card-contato{
     border: 5px solid green;
 
     display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 auto; 
     align-self: stretch;
 
 }
 /*Itens do Footer contato*/
-.contato-footer-contato{
+.contato-footer-card-contato{
     border: 5px solid green;
-    height: 100%;
-    width: 100%;
     display: flex;
+        /* flex: grow | shrink | basis */
+    flex: 0 0 auto;
+    align-self: stretch;
 }
 
 /*Grid Mobile HomePage*/
