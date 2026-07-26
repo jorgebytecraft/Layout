@@ -179,6 +179,7 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 /* Nav container homepage*/
@@ -190,8 +191,7 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-   
+    justify-content: center;
 }
 
 /* Aside container homepage*/
@@ -202,8 +202,9 @@ footer{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
+    gap: 10px;
 
 }
 /* Main container homepage*/
@@ -214,7 +215,7 @@ footer{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -226,9 +227,9 @@ footer{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+
 
 }
 /* Footer container homepage*/
@@ -239,6 +240,7 @@ footer{
 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     
@@ -433,84 +435,105 @@ footer{
 
 /*Item do HomePage */
 /* Itens do Header homepage*/
-.logo-card-homepage{
+.logo-header-card-homepage{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 auto;
+    flex: 0 1 auto;
 }
-.logo-card-homepage img {
+.logo-header-card-homepage img {
     height: 100px; 
     display: block;
 }
-.titulo-card-homepage{
+.titulo-header-card-homepage{
     border: 5px solid green;
     /* flex: grow | shrink | basis */
-    flex: 1 0 0;
+    flex: 1 1 auto;
     align-self: center;
     text-align: center;
 }
+.titulo-header-card-homepage h1{
+    width: 100%;
+}
 
 /* Itens do Nav homepage*/
-.menu-card-homepage{
+.menu-nav-card-homepage{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     align-self: center; 
 }
-.menu-card-homepage a {
+.menu-nav-card-homepage a {
     width: 100px;
     text-align: center;
     border: 1px solid black;
 }
 /* Itens do Aside homepage*/
-table, th, td {
+.tabela-aside-card-homepage{
+    border: 5px solid green;
+    display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 1 auto;
+    align-self: stretch;
+}
+.tabela-aside-card-homepage table {
+    width: 100%;
+}
+table, tr, th, td ,tbody, thead, tfoot{
   border: 1px solid black;
 }
 
-.tabela-card-homepage{
+.listas-aside-card-homepage{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 100px;
-    align-self: stretch;
-}
-.listas-card-homepage{
-    border: 5px solid green;
-    display: flex;
-    /* flex: grow | shrink | basis */
-    flex: 0 0 150px;
-    align-self: stretch;
+    flex: 0 0 auto;
+    align-self: center;
+    justify-content: space-around;
+    width: 100%;
 }
 /* Itens do Main homepage*/
-.video-card-homepage{
+.imagem-main-card-homepage{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 200px;
-    align-self: stretch;
+    flex: 0 0 auto;
+    align-self: auto;
 }
-.main-card-homepage{
+.imagem-main-card-homepage img {
+    width: 100%;
+}
+
+.paragrafo-main-card-homepage{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 100px;
+    flex: 0 1 auto;
     align-self: stretch;  
+}
+.paragrafo-main-card-homepage p{
+    width: 100%;
 }
 /* Itens do Article homepage*/
 .form-article-card-homepage{
     border: 5px solid green;
     /* flex: grow | shrink | basis */
-    flex: 0 0 150px;
+    flex: 0 0 auto;
     align-self: stretch; 
 
 }
-.imagem-article-card-homepage{
+.form-article-card-homepage form{
+    width: 100%;
+}
+.video-article-card-homepage{
     border: 5px solid green;
     /* flex: grow | shrink | basis */
-    flex: 0 0 150px;
+    flex: 0 0 auto;
     align-self: stretch; 
+}
+.video-article-card-homepage iframe{
+    width: 100%;
 }
 
 /*Itens do Footer homepage*/
@@ -518,106 +541,137 @@ table, th, td {
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 750px;
+    flex: 0 1 auto;
     align-self: stretch; 
 }
-.footer-card-homepage{
+.contato-footer-card-homepage p{
+    width: 100%;
+}
+
+.paragrafo-footer-card-homepage{
     border: 5px solid green;
     /* flex: grow | shrink | basis */
-    flex: 0 0 600px;
+    flex: 0 1 auto;
     align-self: stretch; 
+}
+.paragrafo-footer-card-homepage p{
+    width: 100%;
 }
 
 /*Item do Sobre*/
 
 /* Itens do Header sobre*/
-.logo-card-sobre{
+.logo-header-card-sobre{
     border: 5px solid green;    
     display: flex;
         /* flex: grow | shrink | basis */
-    flex: 0 0 auto;
+    flex: 0 1 auto;
 }
-.logo-card-sobre img {
+.logo-header-card-sobre img {
     height: 80px; 
     display: block;
 }
-.titulo-card-sobre{
+.titulo-header-card-sobre{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     align-self: center;    
 }
-.titulo-card-sobre h1{
+.titulo-header-card-sobre h1{
     width: 100%;
     text-align: center;
 }
 
 /* Itens do Nav sobre */
-.menu-card-sobre{
+.menu-nav-card-sobre{
     border: 5px solid green;
     display: flex;
       /* flex: grow | shrink | basis */
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     align-self: center;
 
 }
-.menu-card-sobre a {
+.menu-nav-card-sobre a {
     width: 100px;
     text-align: center;
     border: 1px solid black;
 }
 
 /* Itens do Aside sobre*/
-.paragrafo-card-sobre{
+.paragrafo-aside-card-sobre{
     border: 5px solid green;
     display: flex;
       /* flex: grow | shrink | basis */
-    flex: 0 0 100px;
+    flex: 0 1 auto;
     align-self: stretch;    
 }
-.dialogo-card-sobre{
+.paragrafo-aside-card-sobre p{
+    width: 100%;
+}
+
+.imagem-aside-card-sobre{
     border: 5px solid green;
     display: flex;
         /* flex: grow | shrink | basis */
-    flex: 0 0 100px;
+    flex: 0 0 auto;
     align-self: stretch;    
 
+}
+.imagem-aside-card-sobre img {
+    width: 100%;
 }
 
 /* Itens do Main sobre*/
-.tabela-card-sobre{
+.tabela-main-card-sobre{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 300px;
-    align-self: stretch;    
+    flex: 0 0 auto;
+    align-self: auto;    
 }
-.video-card-main-sobre{
-    border: 5px solid green;
-    display: flex;
-    /* flex: grow | shrink | basis */
-    flex: 0 0 300px;
-    align-self: stretch;
+.tabela-main-card-sobre table{
+    width: 300px;
+}
 
-}
+.video-main-card-sobre{
+    border: 5px solid green;
+    display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 1 300px;
+    align-self: auto;
+
+} 
 
 /*Itens do Article sobre */
-.article-card-sobre{
+.paragrafo-article-card-sobre{
     border: 5px solid green;
     display: flex;
         /* flex: grow | shrink | basis */
-    flex: 0 0 100px;
+    flex: 0 1 auto;
     align-self: stretch;
+}
+.paragrafo-article-card-sobre p{
+    width: 100%;
+}
+.figura-article-card-sobre{
+    border: 5px solid green;
+    display: flex;
+        /* flex: grow | shrink | basis */
+    flex: 1 0 auto;
+    align-self: auto;
+}
+.figura-article-card-sobre img{
+    width: 100%;
 }
 
 /*Itens do Section sobre*/
-.section-card-sobre{
+.paragrafo-section-card-sobre{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 1 0 auto;
-    align-self: stretch;
+    flex: 1 1 auto;
+    align-self: auto;
 }
 
 /*Itens do Footer sobre*/
@@ -625,7 +679,7 @@ table, th, td {
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 1 0 0;
+    flex: 1 1 0;
     align-self: stretch;
 
 }
@@ -633,85 +687,107 @@ table, th, td {
 /*Item do Contato*/
 
 /* Itens do Header contato*/
-.logo-card-contato{
+.logo-header-card-contato{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 auto;
+    flex: 0 1 auto;
 }
-.logo-card-contato img{
+.logo-header-card-contato img{
     width: 90px;
     display: block;
 }
-.titulo-contato{
+.titulo-header-contato{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 1 0 auto;
-    align-self: stretch;  
+    flex: 0 1 auto;
+    align-self: center;  
+}
+
+.titulo-header-contato h1{
+    width: 100%;
 }
 
 /* Itens do Nav contato */
-.menu-card-contato{
+.menu-nav-card-contato{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     align-self: center; 
 }
-.menu-card-contato a{
-    width: 60px;
+.menu-nav-card-contato a{
+    width: 100%;
     border: 1px solid black;
     text-align: center;
 }
 /*Itens da Section contato*/
-.section-card-contato{
+.paragrafo-section-card-contato{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 1 0 auto; 
-    align-self: stretch;
+    flex: 0 1 auto; 
+    align-self: flex-start;
+}
+.paragrafo-section-card-contato p{
+    text-align: center;
 }
 
 /*Itens do Aside*/
-.form-card-contato{
+.titulo-aside-card-contato{
+    border: 5px solid green;
+    /* flex: grow | shrink | basis */
+    flex: 0 1 auto; 
+    align-self: center;
+}
+.titulo-aside-card-contato h2{
+    width: 100%;
+    text-align: center;
+}
+
+.fieldset-aside-card-contato{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 100px; 
+    flex: 0 0 auto; 
     align-self: stretch;
 }
-.paragrafo-card-contato{
+.fieldset-aside-card-contato fieldset{
+    width: 100%;
+}
+
+.paragrafo-aside-card-contato{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 50px; 
+    flex: 0 1 auto; 
     align-self: stretch;
 }
-.figure-card-contato{
-    border: 5px solid green;
-    /* flex: grow | shrink | basis */
-    flex: 0 0 30px; 
-    align-self: stretch;
-}
+
 
 /*Itens do Main contato*/
-.listas-card-contato{
+.listas-main-card-contato{
     border: 5px solid green;
 
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 auto; 
-    align-self: stretch;
-
-    justify-content: space-around; /* Ajusta a divisão da lista*/
+    flex: 0 1 auto; 
+    align-self: center;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
 }
-.video-main-card-contato{
+
+.imagem-main-card-contato{
     border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
     flex: 0 0 auto; 
-    align-self: stretch;
+    align-self: flex-start;
+}
+.imagem-main-card-contato img{
+    width: 100%;
 }
 /*Itens do Articles contato*/
 .imagens-articles-card-contato{
@@ -719,17 +795,21 @@ table, th, td {
 
     display: flex;
     /* flex: grow | shrink | basis */
-    flex: 0 0 30px; 
-    align-self: stretch;
+    flex: 0 1 auto; 
+    align-self: flex-start;
 
 }
+.imagens-articles-card-contato img{
+    width: 100%;
+}
+
 .paragrafo-articles-card-contato{
     border: 5px solid green;
 
     display: flex;
     /* flex: grow | shrink | basis */
     flex: 0 0 auto; 
-    align-self: stretch;
+    align-self: flex-end;
 
 }
 /*Itens do Footer contato*/
@@ -740,6 +820,10 @@ table, th, td {
     flex: 0 0 auto;
     align-self: stretch;
 }
+.contato-footer-card-contato p{
+    width: 100%;
+}
+
 
 /*Grid Mobile HomePage*/
 @media (max-width: 768px) {
