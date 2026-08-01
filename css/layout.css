@@ -24,35 +24,23 @@
     min-height: 100vh;
     background-color: lightgray;
 }
-header{
+.area-homepage header{
     grid-area: header;
-    border: 1px solid black;
-    background-color: lightgray;
 }
-nav{
+.area-homepage nav{
     grid-area: nav;
-    border: 1px solid black;
-    background-color: lightgray;
 }
-aside{
+.area-homepage aside{
     grid-area: aside;
-    border: 1px solid blue;
-    background-color: lightgray;
 }
-article{
+.area-homepage article{
     grid-area: article;
-    border: 1px solid blue;
-    background-color: lightgray;
 }
-main{
+.area-homepage main{
     grid-area: main;
-    border: 1px solid blue;
-    background-color: lightgray;
 }
-footer{
+.area-homepage footer{
     grid-area: footer;
-    border: 1px solid black;
-    background-color: lightgray;
 }
 
 /* Layout da Sobre */
@@ -74,40 +62,37 @@ footer{
     background-color: lightgray;
 }
 
-header{
+.area-sobre header{
     grid-area: header;
     border: 1px solid black;
     background-color: white;
 }
-nav{
+.area-sobre nav{
     grid-area: nav;
     border: 1px solid black;
     background-color: white;
 }
-aside{
+.area-sobre aside{
     grid-area: aside;
     border: 1px solid blue;
     background-color: white;
 }
-article{
+.area-sobre article{
     grid-area: article;
     border: 1px solid blue;
     background-color: white;
 }
-main{
+.area-sobre main{
     grid-area: main;
     border: 1px solid blue;
     background-color: white;
 }
-
-section{
+.area-sobre section{
     grid-area: section;
     border: 1px solid black;
     background-color: white;
 }
-
-
-footer{
+.area-sobre footer{
     grid-area: footer;
     border: 1px solid black;
     background-color: white;
@@ -130,64 +115,53 @@ footer{
     min-height: 100vh;
     background-color: lightgray;
 }
-header{
+.area-contato header{
     grid-area: header;
     border: 1px solid black;
-    background-color: white;
-}
-nav{
+} 
+.area-contato nav{
     grid-area: nav;
     border: 1px solid black;
-    background-color: white;
 }
-
-section{
+.area-contato section{
     grid-area: section;
     border: 1px solid black;
-    background-color: white;
 }
-aside{
+.area-contato aside{
     grid-area: aside;
     border: 1px solid blue;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
-article{
+.area-contato article{
     grid-area: article;
     border: 1px solid blue;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     
 }
-main{
+.area-contato main{
     grid-area: main;
     border: 1px solid blue;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
-footer{
+.area-contato footer{
     grid-area: footer;
     border: 1px solid black;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 /*Flexbox HomePage*/
 
 /* Header container homepage*/
 .header-container-homepage{
-    border: 3px solid red;
-    width: 100%;
-    height: 100%;
-
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 
 /* Nav container homepage*/
 .nav-container-homepage{
-    border: 3px solid red;
-    width: 100%;
-    height: 100%;
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -196,46 +170,31 @@ footer{
 
 /* Aside container homepage*/
 .aside-container-homepage{
-    border: 3px solid red;
-    width: 100%;
-    height: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
 
 }
 /* Main container homepage*/
 .main-container-homepage{
-    border: 3px solid red;
-    height: 100%;
-    width: 100%;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
 }
 /* Article container homepage*/
 .article-container-homepage{
-    border: 3px solid red;
-    height: 100%;
-    width: 100%;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 /* Footer container homepage*/
 .footer-container-homepage{
-    border: 3px solid red;
-    height: 100%;
-    width: 100%;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -433,83 +392,62 @@ footer{
 
 /*Cards do HomePage */
 .logo-header-card-homepage{
-    border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
     flex: 0 0 auto;
 }
-.titulo-header-card-homepage{
-    border: 5px solid green;
-    /* flex-grow: 1/flex-shrink: 1 /flex-basis: 0%*/
-    flex: 1 1 auto;
-    text-align: center;
-    
+.titulo-header-card-homepage{  
+    display: flex;    
+    flex: 0 1 auto;
+    text-align: center;    
 }
+
+
 /* Itens do Header homepage*/
-.titulo-header-card-homepage h1{
-    width: 100%;
-}
 .logo-header-card-homepage img {
-    height: 100px; 
     display: block;
 }
 
+
 /* Cards do Nav homepage*/
 .menu-nav-card-homepage{
-    border: 5px solid green;
     display: flex;
-    /* flex: grow | shrink | basis */
     flex: 0 1 auto;
-    align-self: center; 
+    align-self: center;    
 }
-/* Itens do Nav homepage*/
-.menu-nav-card-homepage a {
-    width: 100px;
-    text-align: center;
-    border: 1px solid black;
+.menu-nav-card-homepage a{
+    display: inline-block;
 }
 
 /* Cards do Aside homepage*/
 .tabela-aside-card-homepage{
-    border: 5px solid green;
-    display: flex;
-    /* flex: grow | shrink | basis */
-    flex: 0 1 auto;
-    align-self: stretch;
-}
-.listas-aside-card-homepage{
-    border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
     flex: 0 0 auto;
     align-self: center;
-    justify-content: space-around;
-    width: 100%;
+    
 }
-/* Itens do Aside homepage*/
-.tabela-aside-card-homepage table {
-    width: 100%;
-}
-table, tr, th, td ,tbody, thead, tfoot{
-  border: 1px solid black;
-}
-
-
-/* Cards do Main homepage*/
-.imagem-main-card-homepage{
-    border: 5px solid green;
-    display: flex;
-    /* flex: grow | shrink | basis */
-    flex: 0 0 auto;
-    align-self: auto;
-}
-
-.paragrafo-main-card-homepage{
-    border: 5px solid green;
+.listas-aside-card-homepage{
     display: flex;
     /* flex: grow | shrink | basis */
     flex: 0 1 auto;
-    align-self: stretch;  
+    align-self: center;
+    justify-content: space-around;
+}
+
+/* Cards do Main homepage*/
+.imagem-main-card-homepage{
+    display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 0 auto;
+    align-self: center;
+}
+
+.paragrafo-main-card-homepage{
+    display: flex;
+    /* flex: grow | shrink | basis */
+    flex: 0 1 auto;
+    align-self: center;  
 }
 
 /* Itens do Main homepage*/
@@ -522,40 +460,39 @@ table, tr, th, td ,tbody, thead, tfoot{
 
 /* Cards do Article homepage*/
 .form-article-card-homepage{
-    border: 5px solid green;
+    display: flex;
     /* flex: grow | shrink | basis */
     flex: 0 0 auto;
-    align-self: stretch; 
+    align-self: center; 
 
 }
 .video-article-card-homepage{
-    border: 5px solid green;
+    display: flex;
     /* flex: grow | shrink | basis */
     flex: 0 0 auto;
-    align-self: stretch; 
+    align-self: auto; 
 }
+
 /* Itens do Article homepage*/
-.form-article-card-homepage form{
-    width: 100%;
-}
+
 .video-article-card-homepage iframe{
-    width: 100%;
+    margin: auto;
+    width: 60%;
 }
 
 
 /*Cards do Footer homepage*/
 .contato-footer-card-homepage{
-    border: 5px solid green;
     display: flex;
     /* flex: grow | shrink | basis */
     flex: 1;
-    align-self: stretch; 
+    align-self: flex-start; 
 }
 .paragrafo-footer-card-homepage{
-    border: 5px solid green;
+    display: flex;
     /* flex: grow | shrink | basis */
     flex: 1;
-    align-self: stretch; 
+    align-self: flex-start; 
 }
 
 /*Itens do Footer homepage*/
