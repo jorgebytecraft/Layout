@@ -1,7 +1,11 @@
-/*Estilizacao da homepage*/
+table, tr, th, td ,tbody, thead, tfoot{
+  border: 2px solid black;
+  color: white;
+}
 
+/*Estilizacao Layout*/
 
-/*Container Homepage*/
+/*Estilizacao Homepage*/
 
 /*Container Header*/
 .container-header-homepage-box{
@@ -12,7 +16,6 @@
     /*Cores e Backgrouds*/
     background-color: rgb(222, 229, 250);
 }
-
 /*Container Nav*/
 .container-nav-homepage-box{
     /*Box Model*/
@@ -48,7 +51,6 @@
 
     /*Cores e Backgrouds*/
     background-color: rgb(222, 229, 250);    
-
 }
 /*Container Footer*/
 .container-footer-homepage-box{
@@ -60,54 +62,59 @@
     background-color: rgb(30, 58, 95, 0.6);
 }
 
+
 /*Cards Header*/
 
-.card-logo-homepage-box{
+.card-header-logo-homepage-box{
     /*Box Model*/
 
     /* border-width border-style border-color*/ 
     border: 5px double #FD7D00;
-
+    /*margin-top margin-right margin-bottom margin-left;*/    
     margin: 3px;
     padding: 2px;
-    width: 100px;
-    height: 100px;
-
+    width: 120px;
+    height: 120px;
 }
-
-.card-titulo-homepage-box{
-    /*Box Model*/
+.card-header-titulo-homepage-box{
+    /*Box Model*/ 
     border-bottom: 3px solid #F58220;
     margin: auto;
     padding: 20px;
 
     /*Cores e Backgrouds*/
-    background-color: rgb(222, 229, 250);
+    background-color: rgb(222, 229, 250);    
 }
 /*Itens do Header*/
-.card-titulo-homepage-box h1{
-    
+.card-header-logo-homepage-box img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.card-header-titulo-homepage-box h1{    
     /*Tipografia*/
+    text-align: center;        
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2rem;
-   
-    /*Cores e Backgrouds*/
-    color: #F58220;
-    
+
+    color: #F58220;    
 }
 
-
 /*Cards Nav*/
-
+.card-nav-menu-homepage-box{
+   /* Mantém espaço reservado para borda */ 
+    border: 2px solid transparent;
+    width: 200px;
+    height: 50px;
+}
 /*Itens da Nav*/
-
-.card-menu-homepage-box a{
+.card-nav-menu-homepage-box a{
     /*Box Model*/
     border: 1px solid #F58220;
     border-radius: 5px;
-    margin: 1px;
+    margin: auto;
     padding: 5px;
-    width: 120px;
+    max-width: 60%;
+    max-height: 30px;
 
     /*Tipografia*/
     text-decoration: none;
@@ -119,39 +126,32 @@
     
 }
     /*Pseudo-classe*/
-.card-menu-homepage-box a:hover{
+.card-nav-menu-homepage-box a:hover{
     background-color: #D96A0A;
 }
 
 
 /*Cards Aside*/
-
-.card-tabela-homepage-box{
+.card-aside-tabela-homepage-box{
     /*Box Model*/
+    margin: 5px;
     padding: 5px;
-    width: 100%;
+    width: 90%;
 
     /*Cores e Backgrouds*/
-    background-color: rgb(30, 58, 95, 0.6);  
+    background-color: rgb(30, 58, 95, 0.6); 
 }
-
-.card-lista-homepage-box{
+.card-aside-lista-homepage-box{
     /*Box Model*/    
     border: 1px solid black;
     padding: 20px;
-    width: 80%;
-
+    width:  90%;
     /*Cores e Backgrouds*/
-    background-color: rgb(202, 209, 200, 0.7);
+    background-color: rgb(202, 209, 200, 0.7);    
+}
 
-    
-}
 /*Itens da Aside*/
-table, tr, th, td ,tbody, thead, tfoot{
-  border: 2px solid black;
-  color: white;
-}
-table{
+.card-aside-tabela-homepage-box table{
     /*Box Model*/
     width: 100%;
     border-collapse: collapse;
@@ -159,32 +159,40 @@ table{
     /*Cores e Backgrouds*/
     background-color: rgb(217, 106, 10, 0.9);
 }
+    /*Pseudo-classe*/
+.card-aside-lista-homepage-box li:first-child{
+    /*Cores e Backgrouds*/
+    color: orange;
+}
 
 
 /*Cards Main*/
-.card-imagem-homepage-box{
-    /*Box Model*/
-    padding: 2px; 
-    width: 100%;   
+.card-main-imagem-homepage-box{
+    /*Box Model*/   
+    margin: 5px;
+    width: 95%;   
     /*Cores e Backgrouds*/
     background-color: rgb(202, 209, 200, 0.7);   
 }
-.card-paragrafo-homepage-box{    
+.card-main-paragrafo-homepage-box{    
     /*Box Model*/
-    padding: 1px;
-
+    padding: 10px;
+    width: 95%;
     /*Cores e Backgrouds*/
     background-color: rgb(202, 209, 200, 0.7);
 }
+    /*Pseudo-elemento*/
+.card-main-paragrafo-homepage-box p::first-line{
+    font-weight: bold;
+}
 
 /*Itens Main*/
-.card-imagem-homepage-box img{
+.card-main-imagem-homepage-box img{
     /*Box Model*/
     padding: 5px;
-    margin: 0 auto;
-    width: 80%;
+    max-width: 100%;
 }
-.card-paragrafo-homepage-box p{
+.card-main-paragrafo-homepage-box p{
     /*Box Model*/
     padding: 5px;
     
@@ -195,79 +203,516 @@ table{
 }
 
 /*Cards Articles*/
-.card-form-homepage-box{
+.card-articles-form-homepage-box{
     /*Box Model*/    
     margin: 5px;
     padding: 2px;
-    width: 100%;
-}
-
-.card-video-homepage-box{    
-    /*Box Model*/
-    padding: 5px;
-    width: 100%;
+    width: 95%;
 
     /*Cores e Backgrouds*/
     background-color: rgb(202, 209, 200, 0.7);
 }
 
+.card-articles-video-homepage-box{    
+    /*Box Model*/
+    margin: 5px;   
+    padding: 5px;
+    width: 95%;
+    /*Cores e Backgrouds*/
+    background-color: rgb(202, 209, 200, 0.7);
+}
+
 /*Itens Articles*/
-.card-form-homepage-box form{
+.card-articles-form-homepage-box form{
     /*Box Model*/
     margin: auto;
     padding: 10px;
-    width: 100%;
+    max-width: 90%;
 
-    /*Cores e Backgroud*/
-    background-color: rgb(202, 209, 200, 0.7);   
+    background-color: rgb(202, 209, 200, 0.7);
+    
+}
+.card-articles-video-homepage-box iframe{
+    display: block;
+    margin: auto;
+    max-width: 70%;
 }
 
 /*Cards Footer*/
-
-.card-contatos-homepage-box{
+.card-footer-contatos-homepage-box{
     /*Box Model*/
     margin: auto;
     padding: 5px;
-    width: 100%;
-
+    width: 100%;  
+}
+/*Itens Articles*/
+.card-footer-contatos-homepage-box p{
     /*Tipografia*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
+}
+
+
+/*Estilizacao Sobre*/
+
+/*Container Header*/
+.container-header-sobre-box{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(222, 229, 250);
 
 }
-.card-paragrafos-homepage-box{
-    /*Box Model*/
+/*Container Nav*/
+.container-nav-sobre-box{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(30, 58, 95, 0.6);
+}
+/*Container Aside*/
+.container-aside-sobre-box{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(222, 229, 250);
+    border-radius: 25px;
+}
+/*Container Main*/
+.container-main-sobre-box{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(222, 229, 250);
+    border-radius: 25px;
+}
+/*Container Articles*/
+.container-articles-sobre-box{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(222, 229, 250);
+    border-radius: 25px;
+}
+/*Container Section*/
+.container-section-sobre-box{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(60, 105, 155, 0.6); 
+}
+/*Container Footer*/
+.container-footer-sobre-box{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(222, 229, 250);    
+}
+
+
+
+/*Cards Header*/
+.card-header-logo-sobre-box{
+    border: 2px solid #F58220;
+    margin: 2px;
+    width: 105px;
+    background-color: #F58220
+}
+.card-header-titulo-sobre-box{
     margin: auto;
     padding: 5px;
+    border-radius: 40px;
+    background-color: #F58220
+}
+
+/*Itens Header*/
+.card-header-logo-sobre-box img {
+    display: block;
+    margin: auto;
+    max-width: 100px;
+    object-fit: contain;
+}
+.card-header-titulo-sobre-box h1{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+/*Card Nav*/
+.card-nav-menu-sobre-box{
+    border: 2px solid transparent;
+    margin: auto;
+    padding: 5px;
+    background-color: rgb(217, 106, 10);
+}
+
+/*Itens Nav*/
+.card-nav-menu-sobre-box a {
+    padding: 3px;
+    width: 100px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+
+    color: white;
+    background-color: rgb(217, 106, 10);
+}
+.card-nav-menu-sobre-box a:hover{
+    background-color: rgb(30, 58, 95, 0.6);
+}
+
+/*Card Aside*/
+.card-aside-paragrafo-sobre-box{
+    padding: 5px;
+    width: 100%;
+}
+.card-aside-imagem-sobre-box{ 
+    padding: 5px;
+    width: 100%;
+}
+/*Item Aside*/
+.card-aside-paragrafo-sobre-box p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    text-align: center;
+}
+.card-aside-imagem-sobre-box img{
+    margin: auto;
+    max-width:100%;
+}
+
+/*Card Main*/
+
+.card-main-tabela-sobre-box{
+    margin: 5px;
+    padding: 5px;
+    width: 45%; 
+}
+.card-main-video-box{
+    margin: auto;
+    padding: 5px;
+    width: 45%;
+}
+/*Item Main*/
+.card-main-tabela-sobre-box table{
+    margin: auto;
+    width: 90%;
+    background-color: rgb(30, 58, 95, 0.6);    
+}
+.card-main-video-box iframe{
+    margin: auto;
+    width: 100%;
+}
+
+/*Card Articles*/
+.card-articles-paragrafo-sobre-box{
+    padding: 10px;
+    width: 100%;
+}
+
+.card-articles-imagem-sobre-box{
+    padding: 5px;
+    width: 100%;    
+}
+/*Item Articles*/
+.card-articles-paragrafo-sobre-box p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+.card-articles-imagem-sobre-box img{
+    margin: auto;
+    width: 200px;
+}
+
+
+/*Card Section*/
+.card-section-paragrafo-sobre-box{
+    margin: 5px;
+    padding: 5px;
+    width: 50%;
+}
+/*Item Section*/
+.card-section-paragrafo-sobre-box p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    
+    color: black;
+}
+.card-footer-contato-sobre-box{
+    margin: 5px;
+    padding: 5px;
+    width: 50%;    
+}
+.card-footer-contato-sobre-box p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    
+    color: black;
+}
+.card-footer-contato-sobre-box p:hover{
+    color: #FD7D00;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*Estilizacao Contato*/
+
+/*Container Contato*/
+
+/*Container Header*/
+.container-header-contato-box{
+    height: 100%;
+    width: 100%;
+
+    background-color: rgb(222, 229, 250);
+}
+
+/*Container Nav*/
+.container-nav-contato-box{
+    height: 100%;
+    width: 100%;
+
+    background-color: rgb(48, 84, 95, 0.6);
+}
+/*Container Section*/
+.container-section-contato-box{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(222, 229, 250);
+}
+/*Container Aside*/
+.container-aside-contato-box{
+    height: 100%;
+    width: 100%;
+
+    background-color: rgb(185, 189, 190); 
+}
+/*Container Main*/
+.container-main-contanto-box{
+    height: 100%;
+    width: 100%;
+
+    background-color: rgb(185, 189, 190); 
+}
+/*Container Articles*/
+.container-article-contato-box{
+    height: 100%;
+    width: 100%;
+
+    background-color: rgb(185, 189, 190);  
+}
+/*Container Footer*/
+.container-footer-contato-box{
+    height: 100%;
+    width: 100%;
+
+    background-color: rgb(48, 84, 95, 0.6);    
+}
+
+
+
+/*Card Contato*/
+
+
+/*Card Header*/
+.card-header-logo-contato-box{
+    border: 2px solid orange;
+    width: 150px;
+    height: 150px;
+
+    background-color: orange;
+}
+.card-header-titulo-contato-box{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 5px;
+    width: 60%;
+    height: 90%;
+    background-color: rgba(212, 222, 250, 0.5);
+}
+
+/*Item Header*/
+.card-header-logo-contato-box img{
+    padding: 5px;
+    width: 100%;
+    height: 100%;    
+}
+.card-header-titulo-contato-box h1{
+    padding: 20px;
+
+    text-decoration: none;
+    text-align: start;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+
+   color: #F58220;   
+}
+
+/*Card Nav*/
+.card-nav-menu-contato-box{
+    border: 2px solid lightslategrey;
+    border-radius: 5px;
+    width: 400px;
+    height: 90%;
+}
+
+/*Item Nav*/
+.card-nav-menu-contato-box a{
+    border: 2px solid lightslategrey; 
+    border-radius: 25px;    
+    margin: auto;
+    width: 120px;
+    padding: 2px;
+   
+    background-color: rgb(30, 58, 95, 0.6);  
+    color: white;
+    
+    text-decoration: none;
+    text-align: center;    
+}
+.card-nav-menu-contato-box a:hover{
+    border-radius: 25px;
+    background-color: #F58220;
+    color: white;
+    
+    font-size: 1.5rem;
+}
+
+
+/*Card Section*/
+
+.card-section-paragrafo-contato-box{
+    border: 5px solid rgb(185, 199, 200);     
+    margin: auto;
+    border-radius: 25px;    
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(30, 58, 95, 0.6);  
+
+}
+
+/*Item Section*/
+.card-section-paragrafo-contato-box p{
+    padding: 5px;
+    width: 100%;
+
+    text-align: center;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+
+}
+
+/*Card Aside*/
+.card-aside-titulo-contato-box{
+    border: 5px solid rgb(185, 199, 200);     
+    padding: 20px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.card-aside-fieldset-contato-box{
+    border: 5px solid rgb(185, 199, 200);       
+    padding: 20px;
+    border-radius: 25px;
+}
+.card-aside-paragrafo-contato-box{
+    border: 5px solid rgb(185, 199, 200);   
+    padding: 10px;
+    border-radius: 25px;    
+}
+
+/*Item Aside*/
+.card-aside-titulo-contato-box h2{
+    margin: auto;
+    padding: 2px;
+    width: 90%;
+    height: 90%;
+
+    text-align: center;
+
+    color: #FD7D00;
+}
+.card-aside-fieldset-contato-box fieldset{
+    width: 50%;
+}
+.card-aside-fieldset-contato-box form{
+    margin: auto;
+    padding: 30px;
+    width: 80%;
+}
+.card-aside-paragrafo-contato-box p{
+    padding: 5px;
+    text-align: center;
+}
+
+
+/*Card Main*/
+
+.card-main-lista-contato-box{
+    border: 5px solid rgb(185, 199, 200);
+    border-radius: 25px;
+    padding: 20px;
+    width: 100%; 
+}
+.card-main-imagem-contato-box{
+    border: 5px solid rgb(185, 199, 200);
+    border-radius: 25px;
+    width: 100%;
+}
+
+/*Item Main*/
+.card-main-lista-contato-box li{
+    text-align: center;
+}
+.card-main-imagem-contato-box img{
+    padding: 5px;
+    width: 100%;
+}
+
+.card-main-lista-contato-box li::first-letter{
+    color: #F58220;
+}
+
+/*Card Articles*/
+
+.card-articles-imagem-contato-box{
+    border: 5px solid rgb(185, 199, 200);
+    border-radius: 25px;
+    width: 100%;
+}
+.card-articles-paragrafo-contato-box{
+    border: 5px solid rgb(185, 199, 200);
+    border-radius: 25px;
+    padding: 10px;
     width: 100%;
     
-    /*Tipografia*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Item Articles*/
+.card-articles-imagem-contato-box img{
+    padding: 8px;
+    width: 100%;
+}
+.card-articles-paragrafo-contato-box p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12px;
+    
 
+    text-align: center;
 }
 
-
-
-
-/*Box Model da sobre*/
-.menu-box-sobre{
-    border-radius: 10px;
-    width: 250px;
-    height: 50px;
+/*Card Footer*/
+.card-footer-paragrafo-contato{
+    border: 2px solid lightslategrey; 
+    border-radius: 25px;
+    padding: 10px;
+    width: 100%;
 }
 
-.tabela-box{
-    margin: 1px;
+/*Item Footer*/
+.card-footer-paragrafo-contato p{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+
+    text-align: center;
+    color: white;
 }
-
-/*Box Model da contato*/
-.menu-box-contato{
-    border-radius: 10px;
-    width: 250px;
-    height: 50px;
-}
-
-
-
-
